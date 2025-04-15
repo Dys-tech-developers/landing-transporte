@@ -12,13 +12,11 @@ const images = [
     description: "Cada unidad cuenta con seguro de carga activo durante todo el trayecto.",
   },
   {
-    url: "/2.png",
+    url: "/3.png",
     alt: "Monitoreo GPS",
     title: "Monitoreo Satelital",
     description: "Seguimiento en tiempo real de nuestras unidades para tu tranquilidad.",
   },
-
-  
   {
     url: "/9.png",
     alt: "Registro digital",
@@ -26,24 +24,23 @@ const images = [
     description: "Toda la información del viaje disponible, organizada y documentada.",
   },
   {
-    url: "/5.png",
+    url: "/tolvalateral.jpeg",
     alt: "Vehículo refrigerado",
     title: "Condiciones adaptadas",
     description: "Adaptamos el transporte según el tipo de animal o carga específica.",
   },
   {
-    url: "/4.png",
+    url: "/rutaverde.jpeg",
     alt: "Ruta abierta",
     title: "Trayectos largos o cortos",
     description: "Viajes locales y de larga distancia con la misma calidad y compromiso.",
   },
   {
-    url: "/3.png",
+    url: "/4.png",
     alt: "Cuidado animal",
     title: "Bienestar Animal",
     description: "Cuidamos cada detalle para garantizar la seguridad y comodidad del animal.",
   },
-  
 ]
 
 const Carousel = () => {
@@ -82,8 +79,32 @@ const Carousel = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-left mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-[#146c2c]">Nuestros Servicios</h2>
-          <p className="mt-4 text-lg text-gray-600 max-w-6xl mx-auto">
-            Conocé las soluciones que ofrecemos para asegurar un traslado responsable, monitoreado y eficiente.
+
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="bg-[#f0fdf4] rounded-lg p-4 text-center shadow hover:shadow-md transition-all">
+              <span className="icon-[mdi--cow] text-4xl text-[#146c2c] mb-2 inline-block" />
+              <h3 className="font-bold text-[#146c2c]">Transporte Bovino</h3>
+              <p className="text-sm text-gray-600 mt-2">Especializado para el traslado seguro de ganado bovino.</p>
+            </div>
+            <div className="bg-[#f0fdf4] rounded-lg p-4 text-center shadow hover:shadow-md transition-all">
+              <span className="icon-[mdi--horse] text-4xl text-[#146c2c] mb-2 inline-block" />
+              <h3 className="font-bold text-[#146c2c]">Transporte Equino</h3>
+              <p className="text-sm text-gray-600 mt-2">Cuidado y confort para caballos durante el viaje.</p>
+            </div>
+            <div className="bg-[#f0fdf4] rounded-lg p-4 text-center shadow hover:shadow-md transition-all">
+              <span className="icon-[mdi--pig] text-4xl text-[#146c2c] mb-2 inline-block" />
+              <h3 className="font-bold text-[#146c2c]">Transporte Porcino</h3>
+              <p className="text-sm text-gray-600 mt-2">Condiciones higiénicas y controladas para porcinos.</p>
+            </div>
+            <div className="bg-[#f0fdf4] rounded-lg p-4 text-center shadow hover:shadow-md transition-all">
+              <span className="icon-[mdi--corn] text-4xl text-[#146c2c] mb-2 inline-block" />
+              <h3 className="font-bold text-[#146c2c]">Transporte de Cereal</h3>
+              <p className="text-sm text-gray-600 mt-2">Transporte eficiente y seguro para granos y cereales.</p>
+            </div>
+          </div>
+
+          <p className="mt-10 text-lg text-gray-600 max-w-6xl mx-auto">
+            Nuestro transporte brinda:
           </p>
         </div>
 
@@ -148,4 +169,3 @@ const Carousel = () => {
 }
 
 export default Carousel
-

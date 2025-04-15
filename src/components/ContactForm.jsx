@@ -178,10 +178,10 @@ const ContactForm = () => {
                           } focus:outline-none focus:ring-2 focus:ring-[#27d757] focus:border-transparent`}
                       >
                         <option value="">Selecciona un servicio</option>
-                        <option value="seguro_carga">Seguro de carga durante el trayecto</option>
-                        <option value="monitoreo_satelital">Monitoreo satelital de la unidad</option>
-                        <option value="sistema_riego">Sistema de riego</option>
-                        <option value="registro_cargas">Registro e informes de carga</option>
+                        <option value="transporte_bovino">Transporte Bovino</option>
+                        <option value="transporte_equino">Transporte equino</option>
+                        <option value="transporte_porcino">Transporte porcino</option>
+                        <option value="transporte_cereal">Transporte de cereal</option>
                       </select>
                       {errors.service && <p className="mt-1 text-sm text-red-500">{errors.service}</p>}
                     </div>

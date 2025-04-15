@@ -61,22 +61,22 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <a href="#servicios" className="text-gray-300 hover:text-[#27d757] transition-colors duration-300">
-                  Seguro de Carga
+                Transporte Bovino
                 </a>
               </li>
               <li>
                 <a href="#servicios" className="text-gray-300 hover:text-[#27d757] transition-colors duration-300">
-                  Monitoreo Satelital
+                Transporte equino
                 </a>
               </li>
               <li>
                 <a href="#servicios" className="text-gray-300 hover:text-[#27d757] transition-colors duration-300">
-                  Sistema de Riego
+                Transporte porcino 
                 </a>
               </li>
               <li>
                 <a href="#servicios" className="text-gray-300 hover:text-[#27d757] transition-colors duration-300">
-                  Registro de Cargas
+                Transporte de cereal
                 </a>
               </li>
             </ul>
