@@ -103,7 +103,7 @@ const Carousel = () => {
             </div>
           </div>
 
-          <p className="mt-10 text-lg text-gray-600 max-w-6xl mx-auto">
+          <p className="mt-10 text-xl md:text-xl font-bold text-[#146c2c]">
             Nuestro transporte brinda:
           </p>
         </div>
