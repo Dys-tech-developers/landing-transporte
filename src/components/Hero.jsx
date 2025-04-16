@@ -5,39 +5,44 @@ const Hero = () => {
   return (
     <section
       id="inicio"
-      className="relative py-24 md:py-32  bg-[url('/1.png')] bg-cover bg-center"
+      className="relative bg-[url('/1.png')] flex justify-start items-end bg-cover min-h-[95vh] bg-center bg-no-repeat py-20 md:py-22"
     >
-      <div className="absolute inset-0 bg-black opacity-70"></div>
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/70" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          {/* CONTENIDO IZQUIERDO */}
+      {/* Contenido */}
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2  items-center">
+          
+          {/* Columna Izquierda */}
           <motion.div
-            className="space-y-6 text-left"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1.5, ease: "easeInOut" }}
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            className="text-white space-y-10 flex flex-col justify-between  min-h-[60vh]  "
           >
-            <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight">
-              Transporte especializado de animales y carga, con el máximo cuidado
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+              Transporte especializado de animales en pie y carga de cereales
+              <span className="block text-[#27d757]">con el máximo cuidado</span>
             </h1>
-            <p className="text-lg text-gray-100">
-              Desde 2015, recorremos rutas nacionales e internacionales cuidando cada detalle. Somos expertos en el traslado de animales (bovinos, porcinos, equinos) y cereales, garantizando seguridad, puntualidad y bienestar en cada kilómetro.
-            </p>
-            <p className="italic text-[#b4dcbc] text-xl font-semibold">
+
+           
+
+            <div className="flex flex-wrap gap-4">
+            <p className="italic text-[#b4dcbc] text-lg md:text-xl font-medium">
               “Un largo camino, siempre con el mismo cuidado”
             </p>
-            <div className="flex flex-wrap gap-6 justify-start">
               <motion.a
                 href="#contacto"
-                className="bg-[#27d757] hover:bg-[#146c2c] text-white px-8 py-4 rounded-full text-lg font-medium transition-colors duration-300 inline-flex items-center"
+                className="bg-[#27d757] hover:bg-[#146c2c] text-white px-6 py-3 rounded-full text-base md:text-lg font-semibold transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
               >
                 Solicitar Servicio
               </motion.a>
+
               <motion.a
                 href="#nosotros"
-                className="bg-white border-2 border-[#5a8d67] text-[#5a8d67] hover:bg-[#5a8d67] hover:text-white px-8 py-4 rounded-full text-lg font-medium transition-colors duration-300 inline-flex items-center"
+                className="border border-[#fff] text-[#fff] hover:bg-[#b4dcbc] hover:text-black px-6 py-3 rounded-full text-base md:text-lg font-semibold transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
               >
                 Conocer Nuestra Historia
@@ -45,16 +50,11 @@ const Hero = () => {
             </div>
           </motion.div>
 
-          {/* Espacio derecho reservado (imagen o decorativo futuro) */}
-          <div></div>
+          
         </div>
-
-       
       </div>
     </section>
   );
 };
 
 export default Hero;
-
-

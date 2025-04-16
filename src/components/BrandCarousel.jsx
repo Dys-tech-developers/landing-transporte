@@ -15,7 +15,7 @@ const BrandShowcase = () => {
         <div className="text-left mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-[#146c2c]">Confían en nosotros</h2>
           <p className="mt-4 text-lg text-gray-600 max-w-6xl mx-auto">
-            Trabajamos junto a marcas líderes del sector para garantizar calidad, seguridad y cumplimiento en cada traslado.
+            Trabajamos junto a empresas líderes del sector para garantizar calidad, seguridad y cumplimiento en cada traslado.
           </p>
         </div>
 

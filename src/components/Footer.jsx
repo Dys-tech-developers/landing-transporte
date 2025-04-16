@@ -20,14 +20,7 @@ const Footer = () => {
             <p className="text-gray-300 mb-4">
               Más de 10 años cuidando lo que más importa: cada trayecto, cada animal, cada cliente.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-[#27d757] transition-colors duration-300">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-[#27d757] transition-colors duration-300">
-                <Instagram className="h-5 w-5" />
-              </a>
-            </div>
+            
           </div>
 
           <div>
@@ -111,9 +104,9 @@ const Footer = () => {
           <p className="text-gray-300 text-sm">
             &copy; {new Date().getFullYear()} Transporte Rory. Todos los derechos reservados.
           </p>
-          <p className="text-gray-300 text-sm mt-2 md:mt-0">
+          <a href="https://dys-landing.vercel.app/" target="_blank" className="text-gray-300 text-sm mt-2 md:mt-0">
             Desarrollado por Dys-Tech <span className="text-[#27d757]">♥</span>
-          </p>
+          </a>
         </div>
       </div>
     </footer>
